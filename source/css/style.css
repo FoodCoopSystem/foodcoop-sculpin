@@ -5,8 +5,12 @@ h4 small
     color: #888;
 }
 
+.container {
+    width: 100%;
+}
+
 .mainContent, footer.container {
-    max-width: 900px;
+    max-width: 100%;
 }
 
 footer.container {
@@ -47,11 +51,28 @@ footer.container {
 .navbar-inverse .navbar-inner {
     background: white;
     height: 90px;
+    border: none;
 } 
 
 
 .navbar-inverse .navbar-inner .nav-collapse.collapse {
     float: right;
-    max-width: 624px;
+    max-width: 745px;
+}
+
+
+.navbar-inverse .brand, .navbar-inverse .nav {
+   margin-top: 0px;
+}
+
+.navbar-inverse .nav > li {
+    margin-top: 35px;
+}
+
+
+.navbar-inverse .nav > li > a {
+    color: #473934;
+    text-transform: uppercase;
+    padding: 0 15px;
 }
 
