@@ -26,3 +26,32 @@ footer.container {
         padding-bottom: 40px;
     }
 }
+
+.navbar .container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar .brand {
+    padding: 0px;
+    margin: 0px;
+    width: 90px;
+    height: 90px;
+}
+
+.navbar-inverse {
+   
+} 
+
+
+.navbar-inverse .navbar-inner {
+    background: white;
+    height: 90px;
+} 
+
+
+.navbar-inverse .navbar-inner .nav-collapse.collapse {
+    float: right;
+    max-width: 624px;
+}
+

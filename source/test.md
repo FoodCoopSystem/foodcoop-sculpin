@@ -1,6 +1,6 @@
 ---
-layout: default
-title: About
+layout: default-pl
+title: Test page
 
 ---
 # About the Author or Blog
