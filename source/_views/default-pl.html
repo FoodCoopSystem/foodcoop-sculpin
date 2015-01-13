@@ -19,6 +19,7 @@
         </style>
     </head>
     <body>
+        <div class="wrapper">
         <header>
             <div class="navbar navbar-inverse navbar-fixed-top">
                 <div class="navbar-inner">
@@ -43,7 +44,8 @@
             </div>
         </header>
         <div class="mainContent container">
-            <img width="100%" src="/image/banner.png" alt="FoodCoop System"/>
+            <img class="banner" src="/image/banner.png" alt="FoodCoop System" /> 
+            
             <div class="row-fluid">
                 <div class="span8">
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
@@ -61,6 +63,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+            <div class="push"></div>
         </div>
         <footer class="container">
             &copy; {{ "now"|date("Y") }} {{ site.title }}
