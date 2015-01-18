@@ -14,81 +14,260 @@
         <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" />
         <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
         <style>
-        /** quick fix because bootstrap <pre> has a background-color. */
-        pre code { background-color: inherit; }
+            /** quick fix because bootstrap <pre> has a background-color. */
+            pre code { background-color: inherit; }
         </style>
     </head>
     <body>
         <div class="wrapper">
-        <header>
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="{{ site.url }}/"><img src="/image/logo.png" alt="FoodCoop System"/></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav">
-                                <li><a href="{{ site.url }}/#about">Czym jest FCS?</a></li>
-                                <li><a href="{{ site.url }}/#how-it-works">Jak to działa?</a></li>
-                                <li><a href="{{ site.url }}/#help">Jak nam pomóc?</a></li>
-                                <li><a href="{{ site.url }}/#news">Co nowego?</a></li>
-                                <li><a href="{{ site.url }}/#about-us">Nasz zespół</a></li>
-                            </ul>
-                        </div><!--/.nav-collapse -->
+            <header>
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            </a>
+                            <a class="brand" href="{{ site.url }}/"><img src="/images/logo.png" alt="FoodCoop System"/></a>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li><a href="{{ site.url }}/#about">Czym jest FCS?</a></li>
+                                    <li><a href="{{ site.url }}/#how-it-works">Jak to działa?</a></li>
+                                    <li><a href="{{ site.url }}/#help">Jak nam pomóc?</a></li>
+                                    <li><a href="{{ site.url }}/#news">Co nowego?</a></li>
+                                    <li><a href="{{ site.url }}/#about-us">Nasz zespół</a></li>
+                                </ul>
+                                <ul class="social-icon">
+                                    <li class="facebook"><a target="_blank" rel="nofolow"  href="https://www.facebook.com/foodcoopsystem">Facebook</a></li>
+                                    <li class="twitter"><a target="_blank" rel="nofolow"  href="https://twitter.com/foodcoopsystem">Facebook</a></li>
+                                    <li class="google"><a target="_blank" rel="nofolow"  href="https://plus.google.com/u/0/b/117350059508672336819/117350059508672336819/about">Google +</a></li>
+                                </ul>
+                                <ul class="lang">
+                                    <li><a href="{{ site.url }}/#">ENG</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
                     </div>
                 </div>
+            </header>
+            <div class="container">
+
+                <!-- Jssor Slider Begin -->
+                <!-- ================================================== -->
+                <div id="slider1" style="display: none; position: relative; margin: 0 auto; width: 980px;
+                     height: 440px; overflow: hidden;">
+
+                    <!-- Loading Screen -->
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+
+                             background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(/imgages/loading.gif) no-repeat center center;
+
+                             top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
+                         overflow: hidden;">
+                        <div>
+                            <img u="image" src2="/images/banner1.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src2="/images/banner2.jpg" />
+                        </div>
+                        <div>
+                            <img u="image" src2="/images/banner3.jpg" />
+                        </div>
+                    </div>
+
+                    <!-- bullet navigator container -->
+                    <div u="navigator" class="jssorb05" >
+                        <!-- bullet navigator item prototype -->
+                        <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+                    </div>
+                </div>
+                <!-- Jssor Slider End -->
             </div>
-        </header>
-        <div class="mainContent container">
-            <img class="banner" src="/image/banner.png" alt="FoodCoop System" /> 
-            
-            <div class="row-fluid">
-                <div class="span8">
-                    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-                </div>
-                <div class="span4 sidebar">
-                    <div class="well">
-                        <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
+
+
+            <div class="container">
+                <div class="mainContent">
+                    <!-- Jssor Slider Begin -->
+                    <!-- You can move inline styles to css file or css block. -->
+                    <!-- ================================================== -->
+                    <div id="slider1_container" style="display: none; position: relative; margin: 0 auto;
+                         top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                        <!-- Loading Screen -->
+                        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                                 top: 0px; left: 0px; width: 100%; height: 100%;">
+                            </div>
+                            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                                 top: 0px; left: 0px; width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <!-- Slides Container -->
+                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                            <div>
+                                <img u="image" src2="../img/1920/red.jpg" />
+                            </div>
+                            <div>
+                                <img u="image" src2="../img/1920/purple.jpg" />
+                            </div>
+                            <div>
+                                <img u="image" src2="../img/1920/blue.jpg" />
+                            </div>
+                        </div>
+
+                        <!-- Bullet Navigator Skin Begin -->
+                        <style>
+                            /* jssor slider bullet navigator skin 21 css */
+                            /*
+                            .jssorb21 div           (normal)
+                            .jssorb21 div:hover     (normal mouseover)
+                            .jssorb21 .av           (active)
+                            .jssorb21 .av:hover     (active mouseover)
+                            .jssorb21 .dn           (mousedown)
+                            */
+                            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                                background: url(../img/b21.png) no-repeat;
+                                overflow: hidden;
+                                cursor: pointer;
+                            }
+
+                            .jssorb21 div {
+                                background-position: -5px -5px;
+                            }
+
+                            .jssorb21 div:hover, .jssorb21 .av:hover {
+                                background-position: -35px -5px;
+                            }
+
+                            .jssorb21 .av {
+                                background-position: -65px -5px;
+                            }
+
+                            .jssorb21 .dn, .jssorb21 .dn:hover {
+                                background-position: -95px -5px;
+                            }
+                        </style>
+                        <!-- bullet navigator container -->
+                        <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+                            <!-- bullet navigator item prototype -->
+                            <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+                        </div>
+                        <!-- Bullet Navigator Skin End -->
+                        <!-- Arrow Navigator Skin Begin -->
+                        <style>
+                            /* jssor slider arrow navigator skin 21 css */
+                            /*
+                            .jssora21l              (normal)
+                            .jssora21r              (normal)
+                            .jssora21l:hover        (normal mouseover)
+                            .jssora21r:hover        (normal mouseover)
+                            .jssora21ldn            (mousedown)
+                            .jssora21rdn            (mousedown)
+                            */
+                            .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+                                position: absolute;
+                                cursor: pointer;
+                                display: block;
+                                background: url(../img/a21.png) center center no-repeat;
+                                overflow: hidden;
+                            }
+
+                            .jssora21l {
+                                background-position: -3px -33px;
+                            }
+
+                            .jssora21r {
+                                background-position: -63px -33px;
+                            }
+
+                            .jssora21l:hover {
+                                background-position: -123px -33px;
+                            }
+
+                            .jssora21r:hover {
+                                background-position: -183px -33px;
+                            }
+
+                            .jssora21ldn {
+                                background-position: -243px -33px;
+                            }
+
+                            .jssora21rdn {
+                                background-position: -303px -33px;
+                            }
+                        </style>
+                        <!-- Arrow Left -->
+                        <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+                        </span>
+                        <!-- Arrow Right -->
+                        <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+                        </span>
+                        <!-- Arrow Navigator Skin End -->
+                        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
                     </div>
-                    <div class="well sidebar-nav">
-                        <h4>Links</h4>
-                        <ul class="nav">
-                            <li><a href="http://sculpin.io">sculpin.io</a></li>
-                            <li><a href="http://twitter.com/getsculpin">@getsculpin</a></li>
-                        </ul>
+                    <!-- Jssor Slider End -->
+                    <div class="row-fluid">
+                        <div class="span8">
+                            {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+                        </div>
+                        <div class="span4 sidebar">
+                            <div class="well">
+                                <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
+                            </div>
+                            <div class="well sidebar-nav">
+                                <h4>Links</h4>
+                                <ul class="nav">
+                                    <li><a href="http://sculpin.io">sculpin.io</a></li>
+                                    <li><a href="http://twitter.com/getsculpin">@getsculpin</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="push"></div>
             </div>
-        </div>
-            <div class="push"></div>
-        </div>
-        <footer class="container">
-            &copy; {{ "now"|date("Y") }} {{ site.title }}
-        </footer>
+            <footer class="container">
+                &copy; {{ "now"|date("Y") }} {{ site.title }}
+                <ul class="sovial-icon">
+                    <li class="facebook"><a target="_blank" rel="nofolow"  href="https://www.facebook.com/foodcoopsystem">Facebook</a></li>
+                    <li class="twitter"><a target="_blank" rel="nofolow"  href="https://twitter.com/foodcoopsystem">Facebook</a></li>
+                    <li class="google"><a target="_blank" rel="nofolow"  href="https://plus.google.com/u/0/b/117350059508672336819/117350059508672336819/about">Google +</a></li>
+                </ul>
+            </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ site.url }}/components/jquery/jquery.min.js"><\/script>')</script>
-        <script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
-        {% block scripts %}
-        {% endblock %}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="{{ site.url }}/components/jquery/jquery.min.js"><\/script>')</script>
+            <script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
+            {% block scripts %}
+            {% endblock %}
 
-        {% if site.google_analytics_tracking_id %}
+            {% if site.google_analytics_tracking_id %}
 
-        <script type="text/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            <script type="text/javascript">
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
-            ga('send', 'pageview');
-        </script>
-        {% endif %}
-        <script src="{{ site.url }}/components/highlightjs/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
+ga('send', 'pageview');
+            </script>
+            {% endif %}
+            <script src="{{ site.url }}/components/highlightjs/highlight.pack.js"></script>
+            <script src="{{ site.url }}/js/slider/jssor.slider.mini.js"></script>
+            <script src="{{ site.url }}/js/slider/slider.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
