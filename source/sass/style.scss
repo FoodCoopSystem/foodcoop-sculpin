@@ -197,7 +197,7 @@ footer{
 /*Banner slides*/
 #slider1 {
     .logo-banner {
-        left: 37%;
+        left: 44%;
         background: url(/images/logo-baner.png) top center no-repeat;
         background-size: 152px 152px;
         position: absolute;
@@ -220,7 +220,7 @@ footer{
 
     h3 {
         color: $banner-text;
-        left: 10%;
+        left: 16%;
         font-size: 21px;
         position: absolute;
         text-align: center;
@@ -232,8 +232,8 @@ footer{
     .go-to-github,
     .read-more {
         position: absolute;
-        width: 138px;
-        height: 26px;
+        width: 168px;
+        height: 35px;
         top: 75%;
         z-index: 10000;
         line-height: 10px;
@@ -251,14 +251,14 @@ footer{
     .go-to-github {
         left: 35%; 
         background: url(/images/banner-button1.png) top center no-repeat;
-        background-size: 138px 26px;
+        background-size: 168px 35px;
         
     }
     
     .read-more {
         left: 51%;
         background: url(/images/banner-button2.png) top center no-repeat;
-        background-size: 138px 26px;
+        background-size: 168px 35px;
     }
     
     
