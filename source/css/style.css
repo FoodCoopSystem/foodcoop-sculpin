@@ -24,52 +24,51 @@ footer.container { margin-top: 30px; padding: 30px 0; border-top: 1px dashed #aa
 /* line 46, ../sass/style.scss */
 .navbar .brand { padding: 0px; margin: 0px; width: 90px; height: 90px; }
 
-/* line 56, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .navbar-inverse .navbar-inner { background: #f5f5f5; height: 90px; border: none; }
-/* line 63, ../sass/style.scss */
-.navbar-inverse .nav-collapse.collapse { float: right; max-width: 950px; }
-/* line 68, ../sass/style.scss */
-.navbar-inverse .lang { float: right; width: 46px; list-style: none; margin: 0px; padding: 0px; position: relative; right: 14px; }
-/* line 78, ../sass/style.scss */
-.navbar-inverse .lang > li > a { color: #ff7c18; }
-/* line 83, ../sass/style.scss */
-.navbar-inverse .social-icon { float: right; width: 120px; list-style: none; margin: 0px; padding: 16px 0px; }
-/* line 92, ../sass/style.scss */
-.navbar-inverse .social-icon > li { width: 40px; margin: 0px; padding: 0px; overflow: hidden; float: left; display: block; height: 44px; background: url("/images/social-icon.png") no-repeat scroll; }
-/* line 103, ../sass/style.scss */
-.navbar-inverse .social-icon > li.facebook { background-position: -91px -4px; }
-/* line 107, ../sass/style.scss */
-.navbar-inverse .social-icon > li.twitter { background-position: -1px -4px; }
-/* line 111, ../sass/style.scss */
-.navbar-inverse .social-icon > li.google { background-position: -45px -4px; }
-/* line 115, ../sass/style.scss */
-.navbar-inverse .social-icon > li > a { width: 40px; height: 40px; margin: 0px; padding: 24px 11px; color: transparent; font-size: 3px; overflow: hidden; }
-/* line 126, ../sass/style.scss */
-.navbar-inverse .brand, .navbar-inverse .navbar-inverse .nav { margin: 0px; padding: 0px; }
-
+/* line 61, ../sass/style.scss */
+.navbar-inverse .navbar-inner .nav-collapse.collapse { float: right; max-width: 950px; }
+/* line 66, ../sass/style.scss */
+.navbar-inverse .navbar-inner .lang { float: right; width: 46px; list-style: none; margin: 0px; padding: 0px; position: relative; right: 14px; }
+/* line 76, ../sass/style.scss */
+.navbar-inverse .navbar-inner .lang > li > a { color: #ff7c18; }
+/* line 81, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon { float: right; width: 120px; list-style: none; margin: 0px; padding: 16px 0px; }
+/* line 90, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon > li { width: 40px; margin: 0px; padding: 0px; overflow: hidden; float: left; display: block; height: 44px; background: url("/images/social-icon.png") no-repeat scroll; }
+/* line 101, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon > li.facebook { background-position: -91px -4px; }
+/* line 105, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon > li.twitter { background-position: -1px -4px; }
+/* line 109, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon > li.google { background-position: -45px -4px; }
+/* line 113, ../sass/style.scss */
+.navbar-inverse .navbar-inner .social-icon > li > a { width: 40px; height: 40px; margin: 0px; padding: 24px 11px; color: transparent; font-size: 3px; overflow: hidden; }
+/* line 122, ../sass/style.scss */
+.navbar-inverse .navbar-inner .btn-navbar { background: url(/image/menu.png); height: 88px; width: 88px; float: right; margin: 0px; padding: 0px; border: none; }
 /* line 132, ../sass/style.scss */
+.navbar-inverse .brand, .navbar-inverse .nav { margin: 0px; padding: 0px; }
+
+/* line 139, ../sass/style.scss */
 .lang > li, .social-icon > li, .navbar-inverse .nav > li { margin-top: 35px; }
 
-/* line 137, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .lang > li > a, .social-icon > li > a, .navbar-inverse .nav > li > a { color: #473934; text-transform: uppercase; padding: 0 15px; font-weight: bold; }
 
-/* line 146, ../sass/style.scss */
-.navbar-inverse .navbar-inner .btn-navbar { background: url(/image/menu.png); height: 88px; width: 88px; float: right; margin: 0px; padding: 0px; border: none; }
-
-/* line 156, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 html, body { height: 100%; }
 
-/* line 160, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .wrapper { min-height: 100%; height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */ height: 100%; margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */ }
 
-/* line 167, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 footer, .push { height: 232px; }
 
-/* line 171, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 footer { background: #393b3d; }
 
 /*SLIDER front*/
-/* line 177, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .jssorb05 { position: absolute; bottom: 85px; right: 6px; }
 
 /* <!-- Bullet Navigator Skin Begin -->*/
@@ -81,19 +80,19 @@ footer { background: #393b3d; }
 .jssorb05 .av:hover     (active mouseover)
 .jssorb05 .dn           (mousedown)
 */
-/* line 193, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av { background: url(/images/b21.png) no-repeat; overflow: hidden; cursor: pointer; }
 
-/* line 199, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .jssorb05 div { background-position: -7px -7px; }
 
-/* line 203, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
 
-/* line 207, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .jssorb05 .av { background-position: -67px -7px; }
 
-/* line 211, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
 /*<!-- Bullet Navigator Skin End -->
@@ -107,23 +106,23 @@ footer { background: #393b3d; }
 .jssora11ldn            (mousedown)
 .jssora11rdn            (mousedown)
 */
-/* line 226, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn { position: absolute; cursor: pointer; display: block; background: url(/images/a21.png) no-repeat; overflow: hidden; }
 
-/* line 234, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .jssora11l { background-position: -11px -41px; }
 
-/* line 238, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .jssora11r { background-position: -71px -41px; }
 
-/* line 242, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .jssora11l:hover { background-position: -131px -41px; }
 
-/* line 246, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .jssora11r:hover { background-position: -191px -41px; }
 
-/* line 250, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .jssora11ldn { background-position: -251px -41px; }
 
-/* line 254, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .jssora11rdn { background-position: -311px -41px; }
