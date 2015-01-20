@@ -1,3 +1,17 @@
+foodcoop.pl localhost build
+================================
+ * Make sure you have [`sculpin`](https://sculpin.io/download/) and [`compass`](http://ndever.net/articles/linux/installing-sass-and-compass-ubuntu-1210-1304) (with sass) installed.
+ * `cd` to your working dir and and then `git clone git@github.com:FoodCoopSystem/foodcoop-sculpin.git`.
+ * `cd source/` dir and run `compass watch`. It will compile and watch sass files for letter changes.
+ * Leave compass alone and open new terminal.
+ * To install necessery dependencies go back to root dir and run `sculpin install`.
+ * Then just serve the site and watch it for changes `sculpin generate --watch --server`.
+ * Leave this time sculpin alone and open another terminal. I suggest to use [terminator](http://gnometerminator.blogspot.com/p/introduction.html) (linux only) 
+ * Congrats! Go to `localhost:8000`.
+ 
+Below is the oficial sculpin instructions
+- - -
+
 Sculpin Blog Skeleton
 =====================
 
