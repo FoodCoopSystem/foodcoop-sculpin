@@ -104,19 +104,22 @@ footer { background: #393b3d; }
 .jssorb05 .av:hover     (active mouseover)
 .jssorb05 .dn           (mousedown)
 */
-/* line 296, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
+.jssorb05 { position: absolute; top: 90%; left: 47%; }
+
+/* line 303, ../sass/style.scss */
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av { background: url(/images/b21.png) no-repeat; overflow: hidden; cursor: pointer; }
 
-/* line 302, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .jssorb05 div { background-position: -7px -7px; }
 
-/* line 306, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
 
-/* line 310, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .jssorb05 .av { background-position: -67px -7px; }
 
-/* line 314, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
 /*<!-- Bullet Navigator Skin End -->
@@ -130,23 +133,23 @@ footer { background: #393b3d; }
 .jssora11ldn            (mousedown)
 .jssora11rdn            (mousedown)
 */
-/* line 329, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn { position: absolute; cursor: pointer; display: block; background: url(/images/a21.png) no-repeat; overflow: hidden; }
 
-/* line 337, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .jssora11l { background-position: -11px -41px; }
 
-/* line 341, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .jssora11r { background-position: -71px -41px; }
 
-/* line 345, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .jssora11l:hover { background-position: -131px -41px; }
 
-/* line 349, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .jssora11r:hover { background-position: -191px -41px; }
 
-/* line 353, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .jssora11ldn { background-position: -251px -41px; }
 
-/* line 357, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .jssora11rdn { background-position: -311px -41px; }

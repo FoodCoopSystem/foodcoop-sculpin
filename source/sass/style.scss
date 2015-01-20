@@ -293,10 +293,18 @@ footer{
 .jssorb05 .av:hover     (active mouseover)
 .jssorb05 .dn           (mousedown)
 */
+
+.jssorb05  {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    
+}
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
     background: url(/images/b21.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
+    
 }
 
 .jssorb05 div {
