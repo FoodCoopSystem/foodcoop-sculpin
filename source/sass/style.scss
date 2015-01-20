@@ -1,6 +1,8 @@
 /*Colors*/
 
 $banner-text: #f7f5f1;
+$banner-button: #86b44f;
+$text: #393b3c;
 $footer-bg: #393b3d;
 
 
@@ -20,7 +22,8 @@ $footer-bg: #393b3d;
 
 
 h1, h2, h3, h4, h5, h6, p, a {
-    font-family:  Gotham, Arial, sans-serif;
+    font-family:  'Gotham A', 'Gotham B';
+    color: $text;
 }
 
 
@@ -225,19 +228,53 @@ footer{
         width: 69%;
         z-index: 10000;
     }
+    
+    .go-to-github,
+    .read-more {
+        position: absolute;
+        width: 138px;
+        height: 26px;
+        top: 75%;
+        z-index: 10000;
+        line-height: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 8px;
+        color:  transparent;
+        
+        &:hover {
+            outline: none;
+            text-decoration: none;
+        }
+    }
+    
+    .go-to-github {
+        left: 35%; 
+        background: url(/images/banner-button1.png) top center no-repeat;
+        background-size: 138px 26px;
+        
+    }
+    
+    .read-more {
+        left: 51%;
+        background: url(/images/banner-button2.png) top center no-repeat;
+        background-size: 138px 26px;
+    }
+    
+    
     .go-to-about {
         left: 49%;
         background: url(/images/down.png) top center no-repeat;
         background-size: 15px 10px;
-        position: absolute;
         text-align: center;
-        top: 95%;
+        position: absolute;
         width: 15px;
         height: 10px;
-        z-index: 4000;
+        top: 95%;
+        z-index: 10000;         
         
         &:hover {
-           background: url(/images/down-hover.png) top center no-repeat;
+           background: url(/images/down.png) top center no-repeat;
            background-size: 15px 10px;
            outline: none;
         }
