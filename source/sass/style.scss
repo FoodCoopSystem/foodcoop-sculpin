@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: $text;
 }
 
+a {
+    outline: none;
+}
+
 h4 small
 {
     display: block;
@@ -156,7 +160,7 @@ footer.container {
             overflow: hidden;
         }
         .btn-navbar {
-            background: url(/image/menu.png);
+            background: url(/images/menu.png);
             height: 88px;
             width: 88px;
             float: right;
