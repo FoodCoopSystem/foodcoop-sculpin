@@ -76,10 +76,16 @@ footer { background: #393b3d; }
 .jssorb05 { position: absolute; bottom: 85px; right: 6px; }
 
 /*Banner slides*/
-/* line 200, ../sass/style.scss */
-#slider1 .background-layer { left: 0; position: absolute; text-align: center; width: 100%; height: 100%; z-index: 10000; background-color: rgba(0, 0, 0, 0.5); }
-/* line 210, ../sass/style.scss */
-#slider1 h3 { color: #f7f5f1; left: 13%; font-size: 21px; margin: 0 auto; position: absolute; text-align: center; top: 60%; width: 60%; z-index: 10000; }
+/* line 196, ../sass/style.scss */
+#slider1 .logo-banner { left: 37%; background: url(/images/logo-baner.png) top center no-repeat; background-size: 152px 152px; position: absolute; text-align: center; top: 20%; width: 152px; height: 152px; z-index: 10000; }
+/* line 208, ../sass/style.scss */
+#slider1 .background-layer { left: 0; position: absolute; text-align: center; width: 100%; height: 100%; z-index: 5000; background-color: rgba(0, 0, 0, 0.5); }
+/* line 218, ../sass/style.scss */
+#slider1 h3 { color: #f7f5f1; left: 10%; font-size: 21px; position: absolute; text-align: center; top: 52%; width: 69%; z-index: 10000; }
+/* line 228, ../sass/style.scss */
+#slider1 .go-to-about { left: 49%; background: url(/images/down.png) top center no-repeat; background-size: 15px 10px; position: absolute; text-align: center; top: 95%; width: 15px; height: 10px; z-index: 4000; }
+/* line 239, ../sass/style.scss */
+#slider1 .go-to-about:hover { background: url(/images/down-hover.png) top center no-repeat; background-size: 15px 10px; outline: none; }
 
 /* <!-- Bullet Navigator Skin Begin -->*/
 /* jssor slider bullet navigator skin b21 css */
@@ -90,19 +96,19 @@ footer { background: #393b3d; }
 .jssorb05 .av:hover     (active mouseover)
 .jssorb05 .dn           (mousedown)
 */
-/* line 234, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av { background: url(/images/b21.png) no-repeat; overflow: hidden; cursor: pointer; }
 
-/* line 240, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .jssorb05 div { background-position: -7px -7px; }
 
-/* line 244, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
 
-/* line 248, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .jssorb05 .av { background-position: -67px -7px; }
 
-/* line 252, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
 /*<!-- Bullet Navigator Skin End -->
@@ -116,23 +122,23 @@ footer { background: #393b3d; }
 .jssora11ldn            (mousedown)
 .jssora11rdn            (mousedown)
 */
-/* line 267, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn { position: absolute; cursor: pointer; display: block; background: url(/images/a21.png) no-repeat; overflow: hidden; }
 
-/* line 275, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .jssora11l { background-position: -11px -41px; }
 
-/* line 279, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .jssora11r { background-position: -71px -41px; }
 
-/* line 283, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .jssora11l:hover { background-position: -131px -41px; }
 
-/* line 287, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .jssora11r:hover { background-position: -191px -41px; }
 
-/* line 291, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .jssora11ldn { background-position: -251px -41px; }
 
-/* line 295, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .jssora11rdn { background-position: -311px -41px; }
