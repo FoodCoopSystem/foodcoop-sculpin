@@ -1,3 +1,26 @@
+/*Colors*/
+$footer-bg: #393b3d;
+
+
+
+@media (max-width: 767px) {
+    .sidebar {
+        padding-top: 30px;
+    }
+}
+@media (min-width: 980px) {
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-bottom: 40px;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family:  Gotham, Arial, sans-serif;
+}
+
+
 h4 small
 {
     display: block;
@@ -22,18 +45,6 @@ footer.container {
     margin-top: 30px;
     padding: 30px 0;
     border-top: 1px dashed #aaa;
-}
-
-@media (max-width: 767px) {
-    .sidebar {
-        padding-top: 30px;
-    }
-}
-@media (min-width: 980px) {
-    body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-        padding-bottom: 40px;
-    }
 }
 
 
@@ -166,7 +177,7 @@ footer, .push {
 }
 
 footer{
-    background: #393b3d;
+    background: $footer-bg;
 }
 
 
@@ -250,4 +261,32 @@ footer{
 
 .jssora11rdn {
     background-position: -311px -41px;
+}
+
+
+/*Banner*/
+#slider1 {
+    img {
+    
+    &:after {
+        content: "";
+        background-color: rgba(248, 247, 216, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    }
+    
+    h3 {
+        color: rgb(255, 255, 255);
+        left: 15%;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        width: 60%;
+        z-index: 10000;
+    }
 }
