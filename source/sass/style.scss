@@ -1,5 +1,8 @@
 /*Colors*/
+
+$banner-text: #f7f5f1;
 $footer-bg: #393b3d;
+
 
 
 
@@ -188,6 +191,36 @@ footer{
     right: 6px;   
 }
 
+/*Banner slides*/
+#slider1 {
+    img {
+
+    }
+    
+    .background-layer {
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color:rgba(0,0,0,0.5);
+        }
+
+    h3 {
+        color: $banner-text;
+        left: 13%;
+        font-size: 21px;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        width: 60%;
+        z-index: 10000;
+    }
+}
+
+
 
 /* <!-- Bullet Navigator Skin Begin -->*/
 /* jssor slider bullet navigator skin b21 css */
@@ -261,32 +294,4 @@ footer{
 
 .jssora11rdn {
     background-position: -311px -41px;
-}
-
-
-/*Banner*/
-#slider1 {
-    img {
-    
-    &:after {
-        content: "";
-        background-color: rgba(248, 247, 216, 0.7);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    }
-    
-    h3 {
-        color: rgb(255, 255, 255);
-        left: 15%;
-        margin: 0 auto;
-        position: absolute;
-        text-align: center;
-        top: 60%;
-        width: 60%;
-        z-index: 10000;
-    }
 }
