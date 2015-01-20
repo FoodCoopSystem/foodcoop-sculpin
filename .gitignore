@@ -7,3 +7,5 @@
 /source/components/
 s3.conf
 /nbproject/private/
+/source/.sass-cache/
+/source/css/*
