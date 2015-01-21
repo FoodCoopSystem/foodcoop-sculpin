@@ -4,6 +4,9 @@ $banner-text: #f7f5f1;
 $banner-button: #86b44f;
 $text: #393b3d;
 $footer-bg: #393b3d;
+$people-image-height: 295px;
+$people-image-width: 307px;
+$gray-on-green: #006224;
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
@@ -420,4 +423,39 @@ footer{
 
 .jssora11rdn {
     background-position: -311px -41px;
+}
+
+.people {
+  margin-bottom: 20px;
+  height: $people-image-height;
+  width: $people-image-width;
+  
+  .text {
+    border: 3px red;
+    cursor : pointer;
+    display : block;
+  }
+}
+
+#join-us {
+  background: #00CE3D;
+  height: $people-image-height;
+  width: $people-image-width;
+  .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 40px;
+    
+    .button {
+      border: solid $gray-on-green 2px;
+      padding: 15px 40px;
+      font-size: 25px;
+    }
+  }
+  
+  .text {
+    text-align: center;
+  }
 }

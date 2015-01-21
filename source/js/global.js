@@ -11,4 +11,30 @@ $(function() {
       }
     }
   });
+  
+  var $people = $('.people'),
+  speed = 400,
+  easing = 'swing';
+  
+  $people
+    .find('.text')
+      .hide()
+      .end()
+    .hover(
+      function () {
+        $(this)
+          .find('.image')
+            .slideUp(speed, easing)
+            .end()
+          .find('.text')
+            .slideDown(speed, easing);
+      },function () {
+       $(this)
+        .find('.text')
+          .slideUp(speed, easing)
+          .end()
+        .find('.image')
+          .slideDown(speed, easing);
+      }
+    );
 });
