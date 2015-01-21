@@ -12,6 +12,8 @@ $(function() {
     }
   });
   
+  
+  // solutiona takan form http://jsfiddle.net/qvbgb/3/
   var $people = $('.people'),
   speed = 400,
   easing = 'swing';
