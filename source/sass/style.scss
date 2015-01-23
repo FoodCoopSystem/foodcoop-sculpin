@@ -4,9 +4,10 @@ $banner-text: #f7f5f1;
 $banner-button: #86b44f;
 $text: #393b3d;
 $footer-bg: #393b3d;
-$people-image-height: 295px;
+$people-image-height: 315px;
 $people-image-width: 307px;
 $gray-on-green: #006224;
+$join-bg: #00c443;
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
@@ -51,6 +52,10 @@ h4 {
 
 a, a:hover, a:focus {
     outline: none;
+}
+
+a:hover {
+   color: black;
 }
 
 h4 small
@@ -114,10 +119,7 @@ footer.container,
         }
      
         
-       
-    }
-    
-
+}
 }
 
 footer.container {
@@ -439,7 +441,7 @@ footer{
 }
 
 .people {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   height: $people-image-height;
   width: $people-image-width;
   
@@ -451,24 +453,31 @@ footer{
 }
 
 #join-us {
-  background: #00CE3D;
+  background: $join-bg url(/images/join-bg.png) center 10px no-repeat;
   height: $people-image-height;
   width: $people-image-width;
   .center {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 170px;
+    margin-top: 185px;
     margin-bottom: 40px;
     
-    .button {
+    .button, .button:hover {
       border: solid $gray-on-green 2px;
-      padding: 15px 40px;
-      font-size: 25px;
+    font-size: 18px;
+    
+    padding: 15px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
     }
   }
   
   .text {
     text-align: center;
   }
+   p {
+     padding: 0 20px;
+}
 }
