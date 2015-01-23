@@ -14,9 +14,9 @@ $join-bg: #00c443;
     .sidebar {
         padding-top: 30px;
     }
-  .mainContent {
-    max-width: 767px;
-}
+    .mainContent {
+        max-width: 767px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -25,16 +25,16 @@ $join-bg: #00c443;
         padding-top: 60px;
         padding-bottom: 40px;
     }
-  .mainContent {
-    max-width: 980px;
-}
+    .mainContent {
+        max-width: 980px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-.mainContent {
-    max-width: 1280px;
-}
+    .mainContent {
+        max-width: 1280px;
+    }
 
 
 }
@@ -55,7 +55,7 @@ a, a:hover, a:focus {
 }
 
 a:hover {
-   color: black;
+    color: black;
 }
 
 h4 small
@@ -63,10 +63,6 @@ h4 small
     display: block;
     font-size: 60%;
     color: #888;
-}
-footer.container,
-.container {
-    width: 100%;
 }
 
 .mainContent {
@@ -81,7 +77,7 @@ footer.container,
     }
 
     .row-fluid { 
-        
+
         .subtext {
             font-size: 19px;
             margin: 0 auto;
@@ -89,7 +85,7 @@ footer.container,
             text-align: center;
             width: 100%;
         }
-        
+
         .col1, .col2, .col3 {
             padding: 120px 20px 20px;
             background: url("/images/about-bg-0.png") no-repeat top center;
@@ -97,37 +93,30 @@ footer.container,
             text-align: center;
             text-justify: inter-word;
         }
-        
-       .col2 {
+
+        .col2 {
             background: url("/images/about-bg-1.png") no-repeat top center;
         }
-        
+
         .col3 {
             background: url("/images/about-bg-2.png") no-repeat top center;
         }
-        
+
         .col1.help {
             background: url("/images/help-bg-1.png") no-repeat top center;
         }
-        
-       .col2.help {
+
+        .col2.help {
             background: url("/images/help-bg-2.png") no-repeat top center;
         }
-        
+
         .col3.help {
             background: url("/images/help-bg-3.png") no-repeat top center;
         }
-     
-        
-}
-}
 
-footer.container {
-    margin-top: 30px;
-    padding: 30px 0;
-    border-top: 1px dashed #aaa;
-}
 
+    }
+}
 
 /*Header and navbar*/
 .navbar .container-fluid {
@@ -281,7 +270,7 @@ footer{
         height: 205px;
         z-index: 10000;
     }
-    
+
     .background-layer {
         left: 0;
         position: absolute;
@@ -290,7 +279,7 @@ footer{
         height: 100%;
         z-index: 5000;
         background-color:rgba(0,0,0,0.5);
-        }
+    }
 
     h3 {
         color: $banner-text;
@@ -302,7 +291,7 @@ footer{
         width: 69%;
         z-index: 10000;
     }
-    
+
     .go-to-github,
     .read-more {
         position: absolute;
@@ -315,27 +304,27 @@ footer{
         text-transform: uppercase;
         font-size: 8px;
         color:  transparent;
-        
+
         &:hover {
             outline: none;
             text-decoration: none;
         }
     }
-    
+
     .go-to-github {
         left: 35%; 
         background: url(/images/banner-button1.png) top center no-repeat;
         background-size: 196px 44px;
-        
+
     }
-    
+
     .read-more {
         left: 50%;
         background: url(/images/banner-button2.png) top center no-repeat;
         background-size: 196px 44px;
     }
-    
-    
+
+
     .go-to-about {
         left: 49%;
         background: url(/images/down.png) top center no-repeat;
@@ -346,13 +335,13 @@ footer{
         height: 10px;
         top: 95%;
         z-index: 10000;         
-        
+
         &:hover {
-           background: url(/images/down.png) top center no-repeat;
-           background-size: 15px 10px;
-           outline: none;
+            background: url(/images/down.png) top center no-repeat;
+            background-size: 15px 10px;
+            outline: none;
         }
-        
+
     }
 }
 
@@ -372,13 +361,13 @@ footer{
     position: absolute;
     top: 85%;
     left: 47%;
-    
+
 }
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
     background: url(/images/b21.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
 .jssorb05 div {
@@ -441,43 +430,102 @@ footer{
 }
 
 .people {
-  margin-bottom: 40px;
-  height: $people-image-height;
-  width: $people-image-width;
-  
-  .text {
-    border: 3px red;
-    cursor : pointer;
-    display : block;
-  }
+    margin-bottom: 40px;
+    height: $people-image-height;
+    width: $people-image-width;
+
+    .text {
+        border: 3px red;
+        cursor : pointer;
+        display : block;
+    }
+}
+
+.team-list {
+    margin-top: 50px;
 }
 
 #join-us {
-  background: $join-bg url(/images/join-bg.png) center 10px no-repeat;
-  height: $people-image-height;
-  width: $people-image-width;
-  .center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 185px;
-    margin-bottom: 40px;
-    
-    .button, .button:hover {
-      border: solid $gray-on-green 2px;
-    font-size: 18px;
-    
-    padding: 15px 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
+    background: $join-bg url(/images/join-bg.png) center 10px no-repeat;
+    height: $people-image-height;
+    width: $people-image-width;
+    .center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 185px;
+        margin-bottom: 40px;
+
+        .button, .button:hover {
+            border: solid $gray-on-green 2px;
+            font-size: 18px;
+
+            padding: 15px 40px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+        }
     }
-  }
-  
-  .text {
-    text-align: center;
-  }
-   p {
-     padding: 0 20px;
+
+    .text {
+        text-align: center;
+    }
+    p {
+        padding: 0 20px;
+    }
 }
+
+
+footer.container,
+.container {
+    width: 100%;
+}
+
+footer.container {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px dashed #aaa;
+    color: $banner-text;
+    
+    .copy {
+        padding-top: 232px;
+        float: left;
+    }
+
+    aside {
+        float: right;
+        margin: 50px 0 0 0;
+
+        h2 {
+            color: $banner-text;
+            font-size: 33px;
+            line-height: 30px;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+        ul.sovial-icon {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            li {
+                height: 100px;
+                padding: 0 4px;
+                background: url(/images/social-icon-footer.png) center top no-repeat;  
+                a {
+                    color: transparent;
+                    padding: 10px 10px 80px;
+                }
+            }
+            .facebook {
+                background-position: -177px 0;
+            }
+            .twitter {
+                background-position: -8px 0;
+            }
+            .google {
+                background-position: -97px 0;
+            }
+        }
+
+    }
 }
