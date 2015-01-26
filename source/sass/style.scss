@@ -265,7 +265,7 @@ footer{
         background-size: 205px 205px;
         position: absolute;
         text-align: center;
-        top: 20%;
+        top: 13%;
         width: 205px;
         height: 205px;
         z-index: 10000;
@@ -364,26 +364,27 @@ footer{
 
 }
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    background: url(/images/b21.png) no-repeat;
+    background: url(/images/slider_dots.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
+    width: 15px !important;
 
 }
 
 .jssorb05 div {
-    background-position: -7px -7px;
+    background-position: 1px 0;
 }
 
 .jssorb05 div:hover, .jssorb05 .av:hover {
-    background-position: -37px -7px;
+    background-position: -15px 0;
 }
 
 .jssorb05 .av {
-    background-position: -67px -7px;
+    background-position: -15px 0;
 }
 
 .jssorb05 .dn, .jssorb05 .dn:hover {
-    background-position: -97px -7px;
+    background-position: -15px 0;
 }
 
 /*<!-- Bullet Navigator Skin End -->
