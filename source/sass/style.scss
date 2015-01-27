@@ -2,6 +2,7 @@
 $banner-text: #f7f5f1;
 $banner-button: #86b44f;
 $text: #393b3d;
+$about-sys-bg: #f3f3f3;
 $footer-bg: #393b3d;
 $people-image-height: 315px;
 $people-image-width: 307px;
@@ -386,6 +387,12 @@ footer{
 }
 
 
+#slider2 {
+    background: $about-sys-bg;
+}
+
+
+
 /*SLIDERS*/
 /* <!-- Bullet Navigator Skin Begin -->*/
 /* jssor slider bullet navigator skin b21 css */
@@ -396,13 +403,20 @@ footer{
 .jssorb05 .av:hover     (active mouseover)
 .jssorb05 .dn           (mousedown)
 */
-
 .jssorb05  {
     position: absolute;
     top: 85%;
     left: 47%;
 
 }
+
+.jssorb21 {
+    left: 56%;
+    position: absolute;
+    top: 89%;
+}
+
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av,
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
     background: url(/images/slider_dots.png) no-repeat;
     overflow: hidden;
@@ -411,72 +425,25 @@ footer{
 
 }
 
+.jssorb21 div,
 .jssorb05 div {
     background-position: 1px 0;
 }
 
+.jssorb21 div:hover, .jssorb21 .av:hover,
 .jssorb05 div:hover, .jssorb05 .av:hover {
     background-position: -15px 0;
 }
 
+.jssorb21 .av,
 .jssorb05 .av {
     background-position: -15px 0;
 }
 
+
 .jssorb05 .dn, .jssorb05 .dn:hover {
     background-position: -15px 0;
 }
-
-/*<!-- Bullet Navigator Skin End -->
-<!-- Arrow Navigator Skin Begin -->*/
-/* jssor slider arrow navigator skin 11 css */
-/*
-.jssora11l              (normal)
-.jssora11r              (normal)
-.jssora11l:hover        (normal mouseover)
-.jssora11r:hover        (normal mouseover)
-.jssora11ldn            (mousedown)
-.jssora11rdn            (mousedown)
-*/
-.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av,
-.jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/images/a21.png) no-repeat;
-    overflow: hidden;
-}
-
-.jssorb21 div,
-.jssora11l {
-    background-position: -11px -41px;
-}
-
-jssorb21 div,
-.jssora11r {
-    background-position: -71px -41px;
-}
-
-.jssorb21 div,
-.jssora11l:hover {
-    background-position: -131px -41px;
-}
-
-.jssorb21 div:hover, .jssorb21 .av:hover,
-.jssora11r:hover {
-    background-position: -191px -41px;
-}
-
-.jssorb21 .av,
-.jssora11ldn {
-    background-position: -251px -41px;
-}
-
-.jssorb21 .dn, .jssorb21 .dn:hover,
-.jssora11rdn {
-    background-position: -311px -41px;
-}
-
 
 /*<!-- Arrow Navigator Skin Begin -->*/
 
