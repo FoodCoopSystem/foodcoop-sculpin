@@ -495,34 +495,23 @@ jssorb21 div,
     display: block;
     background: url(/images/prev_arrow.png) center center no-repeat;
     overflow: hidden;
+    width: 79px;
+    height: 79px;
 }
 
 .jssora21r, .jssora21rdn {
     background: url(/images/next_arrow.png) center center no-repeat;
 }
-
+.jssora21r,
 .jssora21l {
-    background-position: -3px -33px;
+    background-position: 0px -79px;
 }
 
-.jssora21r {
-    background-position: -63px -33px;
-}
-
+.jssora21rdn, 
+.jssora21ldn,
+.jssora21r:hover,
 .jssora21l:hover {
-    background-position: -123px -33px;
-}
-
-.jssora21r:hover {
-    background-position: -183px -33px;
-}
-
-.jssora21ldn {
-    background-position: -243px -33px;
-}
-
-.jssora21rdn {
-    background-position: -303px -33px;
+    background-position: 0px 0px;
 }
 
 
