@@ -41,17 +41,32 @@ jQuery(document).ready(function ($) {
     //Make the element 'slider1_container' visible before initialize jssor slider.
     $("#slider1").css("display", "block");
     var jssor_slider1 = new $JssorSlider$("slider1", options);
+    
+    $("#slider2").css("display", "block");
+    var jssor_slider2 = new $JssorSlider$("slider2", options);
 
     //responsive code begin
     //you can remove responsive code if you don't want the slider scales while window resizes
     function ScaleSlider() {
         var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+        var parentWidth2 = jssor_slider2.$Elmt.parentNode.clientWidth;
+        
         if (parentWidth) {
             jssor_slider1.$ScaleWidth(parentWidth);
         }
-        else
+        else {
             window.setTimeout(ScaleSlider, 30);
+        }
+        
+      if (parentWidth2) {
+            jssor_slider2.$ScaleWidth(parentWidth);
+        }
+        else {
+            window.setTimeout(ScaleSlider, 30);
+        }
+        
     }
+    
     ScaleSlider();
 
     $(window).bind("load", ScaleSlider);

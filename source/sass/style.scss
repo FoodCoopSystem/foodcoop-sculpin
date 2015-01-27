@@ -1,5 +1,4 @@
-/*Colors*/
-
+/*COLORS*/
 $banner-text: #f7f5f1;
 $banner-button: #86b44f;
 $text: #393b3d;
@@ -9,6 +8,7 @@ $people-image-width: 307px;
 $gray-on-green: #006224;
 $join-bg: #00c443;
 
+/*MEDIA QUERY*/
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
     .sidebar {
@@ -17,13 +17,13 @@ $join-bg: #00c443;
     .mainContent {
         max-width: 767px;
     }
-   .navbar-inverse .navbar-inner .social-icon {
+    .navbar-inverse .navbar-inner .social-icon {
         display: none;
-}
+    }
 
-.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
-    margin: 0 0 27px;
-}
+    .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+        margin: 0 0 27px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -46,14 +46,15 @@ $join-bg: #00c443;
 
 }
 
+/*FONTS*/
 @font-face {
     font-family: 'league_gothic_extended_italRg';
     src: url('/fonts/league_ghotic_extended-webfont-webfont.eot');
     src: url('/fonts/league_ghotic_extended-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/league_ghotic_extended-webfont-webfont.woff2') format('woff2'),
-         url('/fonts/league_ghotic_extended-webfont-webfont.woff') format('woff'),
-         url('/fonts/league_ghotic_extended-webfont-webfont.ttf') format('truetype'),
-         url('/fonts/league_ghotic_extended-webfont-webfont.svg#league_gothic_extended_italRg') format('svg');
+        url('/fonts/league_ghotic_extended-webfont-webfont.woff2') format('woff2'),
+        url('/fonts/league_ghotic_extended-webfont-webfont.woff') format('woff'),
+        url('/fonts/league_ghotic_extended-webfont-webfont.ttf') format('truetype'),
+        url('/fonts/league_ghotic_extended-webfont-webfont.svg#league_gothic_extended_italRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -63,17 +64,16 @@ $join-bg: #00c443;
     font-family: 'league_gothic_extendedregular';
     src: url('/fonts/league_ghotic_extended-webfont.eot');
     src: url('/fonts/league_ghotic_extended-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/league_ghotic_extended-webfont.woff2') format('woff2'),
-         url('/fonts/league_ghotic_extended-webfont.woff') format('woff'),
-         url('/fonts/league_ghotic_extended-webfont.ttf') format('truetype'),
-         url('/fonts/league_ghotic_extended-webfont.svg#league_gothic_extendedregular') format('svg');
+        url('/fonts/league_ghotic_extended-webfont.woff2') format('woff2'),
+        url('/fonts/league_ghotic_extended-webfont.woff') format('woff'),
+        url('/fonts/league_ghotic_extended-webfont.ttf') format('truetype'),
+        url('/fonts/league_ghotic_extended-webfont.svg#league_gothic_extendedregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-/*General styles*/
-
+/*GENERAL STYLES*/
 body, h4, h5, h6, p, a {
     font-family:  'Gotham A', 'Gotham B';
     color: $text;
@@ -112,7 +112,7 @@ h4 small
         margin: 0 auto;
         padding-top: 87px;
         text-transform: uppercase;
-        font-size: 42px;
+        font-size: 61px;
     }
 
     .row-fluid { 
@@ -386,7 +386,7 @@ footer{
 }
 
 
-
+/*SLIDERS*/
 /* <!-- Bullet Navigator Skin Begin -->*/
 /* jssor slider bullet navigator skin b21 css */
 /*
@@ -438,6 +438,7 @@ footer{
 .jssora11ldn            (mousedown)
 .jssora11rdn            (mousedown)
 */
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av,
 .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn {
     position: absolute;
     cursor: pointer;
@@ -446,30 +447,118 @@ footer{
     overflow: hidden;
 }
 
+.jssorb21 div,
 .jssora11l {
     background-position: -11px -41px;
 }
 
+jssorb21 div,
 .jssora11r {
     background-position: -71px -41px;
 }
 
+.jssorb21 div,
 .jssora11l:hover {
     background-position: -131px -41px;
 }
 
+.jssorb21 div:hover, .jssorb21 .av:hover,
 .jssora11r:hover {
     background-position: -191px -41px;
 }
 
+.jssorb21 .av,
 .jssora11ldn {
     background-position: -251px -41px;
 }
 
+.jssorb21 .dn, .jssorb21 .dn:hover,
 .jssora11rdn {
     background-position: -311px -41px;
 }
 
+
+/*<!-- Arrow Navigator Skin Begin -->*/
+
+/* jssor slider arrow navigator skin 21 css */
+/*
+.jssora21l              (normal)
+.jssora21r              (normal)
+.jssora21l:hover        (normal mouseover)
+.jssora21r:hover        (normal mouseover)
+.jssora21ldn            (mousedown)
+.jssora21rdn            (mousedown)
+*/
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url(/images/prev_arrow.png) center center no-repeat;
+    overflow: hidden;
+}
+
+.jssora21r, .jssora21rdn {
+    background: url(/images/next_arrow.png) center center no-repeat;
+}
+
+.jssora21l {
+    background-position: -3px -33px;
+}
+
+.jssora21r {
+    background-position: -63px -33px;
+}
+
+.jssora21l:hover {
+    background-position: -123px -33px;
+}
+
+.jssora21r:hover {
+    background-position: -183px -33px;
+}
+
+.jssora21ldn {
+    background-position: -243px -33px;
+}
+
+.jssora21rdn {
+    background-position: -303px -33px;
+}
+
+
+/*News CSS*/
+.news {
+    background:  url(/images/bg.jpg) top center repeat;
+    color: $banner-text;
+
+    .background-layer {
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 276px;
+        z-index: 500;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .mainContent {
+        z-index: 501;
+        position: relative;
+        
+        h2 {
+            color: $banner-text;
+        }
+
+        .subtext {
+            font-size: 21px;
+            padding: 30px 0 100px;
+            width: 100%;
+        }
+    }
+
+
+}
+
+/*TEAM*/
 .people {
     margin-bottom: 40px;
     height: $people-image-height;
@@ -516,7 +605,7 @@ footer{
     }
 }
 
-
+/*FOOTER*/
 footer.container,
 .container {
     width: 100%;
@@ -527,7 +616,7 @@ footer.container {
     padding: 30px 0;
     border-top: 1px dashed #aaa;
     color: $banner-text;
-    
+
     .copy {
         padding-top: 232px;
         float: left;
