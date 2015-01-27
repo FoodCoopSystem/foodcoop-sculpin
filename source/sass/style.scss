@@ -389,6 +389,13 @@ footer{
 
 #slider2 {
     background: $about-sys-bg;
+    
+    h2{
+        position: absolute;
+        z-index: 11111;
+        left: 10%;
+        top: 9%;
+    }
 }
 
 
