@@ -45,16 +45,12 @@ jQuery(document).ready(function ($) {
     $("#slider2").css("display", "block");
     var jssor_slider2 = new $JssorSlider$("slider2", options);
 
-    $("#slider3").css("display", "block");
-    var jssor_slider3 = new $JssorSlider$("slider3", options);
-
 
     //responsive code begin
     //you can remove responsive code if you don't want the slider scales while window resizes
     function ScaleSlider() {
         var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
         var parentWidth2 = jssor_slider2.$Elmt.parentNode.clientWidth;
-        var parentWidth3 = jssor_slider3.$Elmt.parentNode.clientWidth;
 
         if (parentWidth) {
             jssor_slider1.$ScaleWidth(parentWidth);
@@ -70,13 +66,6 @@ jQuery(document).ready(function ($) {
             window.setTimeout(ScaleSlider, 30);
         }
 
-        if (parentWidth3) {
-            jssor_slider3.$ScaleWidth(parentWidth);
-        }
-        else {
-            window.setTimeout(ScaleSlider, 30);
-        }
-
     }
 
     ScaleSlider();
@@ -86,23 +75,4 @@ jQuery(document).ready(function ($) {
     $(window).bind("orientationchange", ScaleSlider);
     //responsive code end.
 
-
-    $(".jssorb21l").click(function () {
-        //Slider additional script.
-        var slider2 = new $JssorSlider$("slider2");
-        var slider3 = new $JssorSlider$("slider3");
-//   alert();
-        var index2 = slider2.$CurrentIndex();
-        var index3 = slider2.$CurrentIndex();
-
-
-
-        alert(index2);
-        alert("The text has been changed.");
-        slider3.$GoTo(slider2.$CurrentIndex())
-    });
-
 });
-
-
-
