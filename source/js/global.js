@@ -16,8 +16,10 @@ $(function() {
   
   // solutiona takan form http://jsfiddle.net/qvbgb/3/
   var $people = $('.people'),
-  speed = 600,
-  easing = 'swing';
+  speed = 400,
+  easing = 'swing',
+  queue = false,
+  slideOption = {duration:speed, easing:easing};
   
   $people
     .find('.text')
@@ -26,18 +28,18 @@ $(function() {
     .hover(
       function () {
         $(this)
-          .find('.image')
-            .slideUp(speed, easing)
+          .find('.image').stop(true, true)
+            .slideUp(slideOption)
             .end()
-          .find('.text')
-            .slideDown(speed, easing);
+          .find('.text').stop(true, true)
+            .slideDown(slideOption);
       },function () {
        $(this)
-        .find('.text')
-          .slideUp(speed, easing)
+        .find('.text').stop(true, true)
+          .slideUp(slideOption)
           .end()
-        .find('.image')
-          .slideDown(speed, easing);
+        .find('.image').stop(true, true)
+          .slideDown(slideOption);
       }
     );
 });
