@@ -16,7 +16,7 @@ $(function() {
   
   // solutiona takan form http://jsfiddle.net/qvbgb/3/
   var $people = $('.people'),
-  speed = 400,
+  speed = 500,
   easing = 'swing',
   queue = false,
   slideOption = {duration:speed, easing:easing};
