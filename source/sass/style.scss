@@ -722,7 +722,6 @@ footer.container {
     }
 
     aside {
-        float: right;
         margin: 50px 0 0 0;
 
         h2 {
@@ -731,28 +730,40 @@ footer.container {
             line-height: 30px;
             margin: 40px 0;
             text-transform: uppercase;
+            width: 332px;
+            display: inline;
         }
         ul.sovial-icon {
             list-style: none;
             margin: 0px;
             padding: 0px;
+            display: inline;
+            
             li {
-                height: 100px;
-                padding: 0 4px;
-                background: url(/images/social-icon-footer.png) center top no-repeat;  
+                padding: 41px 0 13px;
+                display: inline;
                 a {
                     color: transparent;
-                    padding: 10px 10px 80px;
+                    padding: 10px;
                 }
             }
             .facebook {
-                background-position: -177px 0;
+               background: url(/images/fb_icon_03.png) center -72px no-repeat; 
+                &:hover {
+                    background-position: center 0px
+                }
             }
             .twitter {
-                background-position: -8px 0;
+                background: url(/images/twitter_icon_03.png) center -72px no-repeat; 
+                &:hover{
+                    background-position: center 0px
+                }
             }
             .google {
-                background-position: -97px 0;
+                background: url(/images/g+_icon_03.png) center -72px no-repeat;
+                &:hover{
+                    background-position: center 0px
+                }
             }
         }
 
