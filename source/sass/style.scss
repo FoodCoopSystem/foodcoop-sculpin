@@ -62,7 +62,7 @@ $join-bg: #00c443;
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 980px) {
+@media (max-width: 1024px) {
     body {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -80,13 +80,19 @@ $join-bg: #00c443;
         }
     }
 
-    footer.container .span8 {
+    footer.container 
+
+    aside h2 {
+        font-size: 31px !important;
+    }
+
+    .span8 {
         min-width: 620px;
     }
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .mainContent {
         max-width: 1280px;
     }
