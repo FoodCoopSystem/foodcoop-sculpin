@@ -7,6 +7,6 @@
 sculpin generate --env=prod
 if [ $? -ne 0 ]; then echo "Could not generate the site"; exit 1; fi
 
-rsync -avze output_prod/ ../FoodCoopSystem.github.io/ && git commit -a -m 'sculpin generate env=prod' && git push
+rsync -avze output_prod/* ../FoodCoopSystem.github.io/ && cd ../FoodCoopSystem.github.io/ && git commit -a -m 'sculpin generate env=prod' && git push origin master && cd ../foodcoop-sculpin/
 
 if [ $? -ne 0 ]; then echo "Could not publish the site"; exit 1; fi

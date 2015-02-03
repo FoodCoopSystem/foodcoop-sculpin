@@ -491,10 +491,11 @@ footer{
 
 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av,
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    background: url(/images/slider_dots.png) no-repeat;
+    background: url(/images/slider_dots.png) no-repeat top left;
+    background-size: 31px 10px;
     overflow: hidden;
     cursor: pointer;
-    width: 15px !important;
+    width: 11px !important;
 
 }
 
@@ -505,17 +506,17 @@ footer{
 
 .jssorb21 div:hover, .jssorb21 .av:hover,
 .jssorb05 div:hover, .jssorb05 .av:hover {
-    background-position: -15px 0;
+    background-position: -10px 0;
 }
 
 .jssorb21 .av,
 .jssorb05 .av {
-    background-position: -15px 0;
+    background-position: -10px 0;
 }
 
 
 .jssorb05 .dn, .jssorb05 .dn:hover {
-    background-position: -15px 0;
+    background-position: -10px 0;
 }
 
 /*<!-- Arrow Navigator Skin Begin -->*/
