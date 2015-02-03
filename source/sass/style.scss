@@ -20,6 +20,11 @@ $join-bg: #00c443;
     .mainContent {
         max-width: 767px;
     }
+
+    .mainContent h2 {
+        font-size: 43px !important;
+    }
+
     .navbar-inverse .navbar-inner .social-icon {
         display: none;
     }
@@ -27,6 +32,33 @@ $join-bg: #00c443;
     .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
         margin: 0 0 27px;
     }
+
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin: 0 auto;
+        }
+    }
+
+    footer.container {
+        margin: 20px 0 0 !important;
+        padding: 30px 10px !important;
+
+        .span8 {
+            min-width: 400px;
+            padding-left: 5px;        
+        }
+        .copy {
+            padding-top: 0px !important;
+        }
+        aside h2 {
+            font-size: 24px !important;
+        }
+
+    }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -38,12 +70,38 @@ $join-bg: #00c443;
     .mainContent {
         max-width: 980px;
     }
+
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin-left: 19px;
+        }
+    }
+
+    footer.container .span8 {
+        min-width: 620px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .mainContent {
         max-width: 1280px;
+    }
+    
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin-left: 13px;
+        }
+    }
+    
+    footer.container .span8 {
+       min-width: 620px;
     }
 
 
@@ -668,18 +726,20 @@ footer{
 
 .team-list {
     margin-top: 50px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
 #join-us {
     background: $join-bg url(/images/join-bg.png) center 29px no-repeat;
     height: $people-image-height;
     width: $people-image-width;
+    
     .center {
+        margin: 0 auto 40px;
+        position: relative;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 210px;
-        margin-bottom: 40px;
+        top: 210px;
 
         .button {
             border: solid $gray-on-green 2px;
@@ -689,20 +749,23 @@ footer{
             text-transform: uppercase;
             text-decoration: none;
             font-weight: bold;
-        
-        &:hover {
-            border: solid $gray-on-green 2px;
-            color: $join-bg;
-            background: $gray-on-green;
-        }
+
+            &:hover {
+                border: solid $gray-on-green 2px;
+                color: $join-bg;
+                background: $gray-on-green;
+            }
         }
     }
 
-    .text {
+    .join-link {
+        position: relative;
         text-align: center;
-    }
-    p {
-        padding: 0 20px;
+        top: 207px;
+
+            p {
+            padding: 0 20px;
+        }
     }
 }
 
@@ -724,6 +787,7 @@ footer.container {
 
     aside {
         margin: 50px 0 0 0;
+        float: right;
 
         h2 {
             color: $banner-text;
