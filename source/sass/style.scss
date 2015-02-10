@@ -661,6 +661,7 @@ footer{
     height: $people-image-height;
     width: $people-image-width;
     background: $background;
+    overflow: hidden;
 
     .dziubek {
         background: url("/images/dziubek.png") no-repeat center top;
