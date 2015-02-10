@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: ['source/src-js/global.js', 'source/src-js/global.js'],
+                src: ['source/src-js/slider.js', 'source/src-js/global.js'],
                 dest: 'source/js/<%= pkg.name %>.min.js'
             }
         },
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         // Sculpin prod
         'sculpin-generate': {
             options: {
-                bin: 'php sculpin.phar'
+                bin: '--server'
             },
             build: {
                 args: {
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            files: ['source/scss/*.scss', 'source/src-js/global.js', 'source/src-js/global.js'],
+            files: ['source/sass/*.scss', 'source/src-js/slider.js', 'source/src-js/global.js'],
             tasks: ['compass', 'uglify']
         }
 
