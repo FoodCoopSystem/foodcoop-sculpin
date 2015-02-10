@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
         }
 
     }
-
+//Test
     ScaleSlider();
 
     $(window).bind("load", ScaleSlider);

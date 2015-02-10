@@ -27,20 +27,23 @@ module.exports = function (grunt) {
             linecomments: false,
             outputstyle: 'compressed'
         },
-        // Sculpin prod
-        'sculpin-generate': {
-            options: {
-                bin: '--server'
-            },
-            build: {
-                args: {
-                    env: 'prod'
-                }
-            }
+        // Sculpin config.
+        'sculpin-serve': {
+            options: {},
+            build: {}
         },
+        'sculpin-generate': {
+            options: {},
+            build: {}
+        },
+        'sculpin-watch': {
+            options: {},
+            build: {}
+        },
+        //Watch config.
         watch: {
             files: ['source/sass/*.scss', 'source/src-js/slider.js', 'source/src-js/global.js'],
-            tasks: ['compass', 'uglify']
+            tasks: ['uglify', 'compass', 'grunt-sculpin']
         }
 
     });
@@ -49,5 +52,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-compass');
     grunt.loadNpmTasks('grunt-sculpin');
-    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'sculpin-generate']);
+    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'grunt-sculpin']);
 };
