@@ -9,9 +9,11 @@ foodcoop.pl localhost build
  * Congrats! Go to `localhost:8000`.
 
  
-Use Node.js package manager to run grunt.
+Install Node.js package manager to run grunt.
 =====================
     sudo apt-get install npm
+
+
 
 
 Below is the oficial sculpin instructions
