@@ -1,14 +1,19 @@
 foodcoop.pl localhost build
 ================================
- * Make sure you have [`sculpin`](https://sculpin.io/download/) and [`compass`](http://ndever.net/articles/linux/installing-sass-and-compass-ubuntu-1210-1304) (with sass) installed.
+ * Make sure you have [`sculpin`](https://sculpin.io/download/) and [`Node.js package manager - npm`](http://ndever.net/articles/linux/installing-sass-and-compass-ubuntu-1210-1304) (with Grunt, Sass) installed.
  * `cd` to your working dir and and then `git clone git@github.com:FoodCoopSystem/foodcoop-sculpin.git`.
- * `cd source/` dir and run `compass watch`. It will compile and watch sass files for letter changes.
- * Leave compass alone and open new terminal.
+ * `npm install` manager will install all dependencies.
  * To install necessery dependencies go back to root dir and run `sculpin install`.
- * Then just serve the site and watch it for changes `sculpin generate --watch --server`.
- * Leave this time sculpin alone and open another terminal. I suggest to use [terminator](http://gnometerminator.blogspot.com/p/introduction.html) (linux only) 
+ * `grunt watch -v` - and grunt will run `sculpin` server, `compass` for css and `uglify` for js
+ [terminator](http://gnometerminator.blogspot.com/p/introduction.html) (linux only) 
  * Congrats! Go to `localhost:8000`.
+
  
+Use Node.js package manager to run grunt.
+=====================
+    sudo apt-get install npm
+
+
 Below is the oficial sculpin instructions
 - - -
 
@@ -51,11 +56,29 @@ Build
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
 
-### If You Need Sculpin
+## Download the Phar
+
+Downloading sculpin.phar is the best way to get up and running with Sculpin since it is a ready to run self-contained archive. You can download it like this:
 
     curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
+
+You can execute Sculpin by running php sculpin.phar but if you want to skip the php part, you can make sculpin.phar executable like this:
+
+    chmod +x sculpin.phar
+
+To make things even easier, sculpin.phar can be renamed to sculpin like this:
+
+    mv sculpin.phar sculpin
+
+Finally, if you move sculpin to your path it can be run from anywhere. For example, assuming ~/bin is in your $PATH, you can do the following:
+
+    mv sculpin ~/bin/
+
+That's it! You're all set to run Sculpin. :)
+
+You can also download stable releases of Sculpin at the following URLs:
+
+    v2.0.0 - https://download.sculpin.io/release/v2.0.0/sculpin.phar
 
 
 Previewing Development Builds
