@@ -4,9 +4,10 @@ foodcoop.pl localhost build
  * `cd` to your working dir and and then `git clone git@github.com:FoodCoopSystem/foodcoop-sculpin.git`.
  * `npm install` manager will install all dependencies.
  * To install necessery dependencies go back to root dir and run `sculpin install`.
- * `grunt watch -v` - and grunt will run `sculpin` server, `compass` for css and `uglify` for js
+ * `grunt watch -v` - and grunt will run `sculpin` generate, `compass` for css and `uglify` for js
+ * `grunt sculpin-serve` if you want to run  lightweight PHP on `localhost:8000`.
  [terminator](http://gnometerminator.blogspot.com/p/introduction.html) (linux only) 
- * Congrats! Go to `localhost:8000`.
+ * Congrats!
 
  
 Install Node.js package manager to run grunt.
