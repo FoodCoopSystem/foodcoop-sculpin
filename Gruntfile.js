@@ -42,8 +42,8 @@ module.exports = function (grunt) {
         },
         //Watch config.
         watch: {
-            files: ['source/sass/*.scss', 'source/src-js/slider.js', 'source/src-js/global.js'],
-            tasks: ['uglify', 'compass', 'grunt-sculpin']
+            files: ['source/sass/*.scss', 'source/src-js/slider.js', 'source/src-js/global.js', 'source/_views/default-pl.html' ],
+            tasks: ['uglify', 'compass', 'grunt-sculpin', 'sculpin-generate', 'sculpin-watch']
         }
 
     });
@@ -52,5 +52,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-compass');
     grunt.loadNpmTasks('grunt-sculpin');
-    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'grunt-sculpin']);
+    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'sculpin-generate', 'sculpin-watch']);
 };
