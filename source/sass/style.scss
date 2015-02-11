@@ -40,7 +40,8 @@ $button-baner: #69c34e;
 
         .people {
             min-width: 295px;
-            margin: 0 auto;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
 
@@ -60,7 +61,15 @@ $button-baner: #69c34e;
         }
 
     }
-
+    
+    #slider2 .data h5 {
+        font-size: 30px !important;
+    }
+    
+    #slider2 .data > ul li {
+        font-size: 24px !important;
+        line-height: 41px !important;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -90,6 +99,15 @@ $button-baner: #69c34e;
 
     .span8 {
         min-width: 620px;
+    }
+    
+    #slider2 .data h5 {
+        font-size: 30px !important;
+    }
+    
+    #slider2 .data > ul li {
+        font-size: 24px !important;
+        line-height: 41px !important;
     }
 }
 
@@ -591,19 +609,25 @@ footer{
     
 }
 
-.jssorb21 div,
-.jssorb05 div {
-    background-position: -130px -20px;
-}
-
-.jssorb21 div:hover, .jssorb21 .av:hover,
-.jssorb05 div:hover, .jssorb05 .av:hover {
+.jssorb21 div {
     background-position: -161px -20px;
 }
+.jssorb05 div {
+    background-position: -130px -22px;
+}
 
-.jssorb21 .av,
+.jssorb21 div:hover, .jssorb21 .av:hover {
+    background-position: -130px -20px;
+}
+.jssorb05 div:hover, .jssorb05 .av:hover {
+    background-position: -161px -22px;
+}
+
+.jssorb21 .av {
+    background-position: -145px -20px;
+}
 .jssorb05 .av {
-     background-position: -145px -20px;
+     background-position: -145px -22px;
 }
 
 
@@ -748,6 +772,7 @@ footer{
 
         h4 {
             padding: 7px 15px 15px 15px;
+            font-size: 17px;
         }
 
         .dziubek {
