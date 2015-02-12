@@ -9,127 +9,9 @@ $about-sys-bg: #f3f3f3;
 $footer-bg: #393b3d;
 $people-image-height: 354px;
 $people-image-width: 307px;
-$gray-on-green: #006224;
+$gray-on-green: #36632e;
 $join-bg: #00c443;
 $button-baner: #69c34e;
-
-/*MEDIA QUERY*/
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 767px) {
-    .sidebar {
-        padding-top: 30px;
-    }
-    .mainContent {
-        max-width: 767px;
-    }
-
-    .mainContent h2 {
-        font-size: 43px !important;
-    }
-
-    .navbar-inverse .navbar-inner .social-icon {
-        display: none;
-    }
-
-    .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
-        margin: 0 0 27px;
-    }
-
-    .container-fluid.team-list {
-        padding: 0px;
-
-        .people {
-            min-width: 295px;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
-    }
-
-    footer.container {
-        margin: 20px 0 0 !important;
-        padding: 30px 10px !important;
-
-        .span8 {
-            min-width: 400px;
-            padding-left: 5px;        
-        }
-        .copy {
-            padding-top: 0px !important;
-        }
-        aside h2 {
-            font-size: 24px !important;
-        }
-
-    }
-    
-    #slider2 .data h5 {
-        font-size: 30px !important;
-    }
-    
-    #slider2 .data > ul li {
-        font-size: 24px !important;
-        line-height: 41px !important;
-    }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 1024px) {
-    body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .mainContent {
-        max-width: 980px;
-    }
-
-    .container-fluid.team-list {
-        padding: 0px;
-
-        .people {
-            min-width: 295px;
-            margin-left: 11px;
-        }
-    }
-
-    footer.container 
-
-    aside h2 {
-        font-size: 31px !important;
-    }
-
-    .span8 {
-        min-width: 620px;
-    }
-    
-    #slider2 .data h5 {
-        font-size: 30px !important;
-    }
-    
-    #slider2 .data > ul li {
-        font-size: 24px !important;
-        line-height: 41px !important;
-    }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1280px) {
-    .mainContent {
-        max-width: 1280px;
-    }
-    
-    .container-fluid.team-list {
-        padding: 0px;
-
-        .people {
-            min-width: 295px;
-            margin-left: 13px;
-        }
-    }
-    
-    footer.container .span8 {
-       min-width: 620px;
-    }
-}
 
 /*FONTS*/
 @font-face {
@@ -260,6 +142,21 @@ h4 small
     height: 90px;
 }
 
+.navbar-inverse .nav-collapse.in.collapse {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a,
+.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background: transparent;
+    color: $menu-nav-links;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
 .navbar-inverse {
     .navbar-inner {
         background: #f5f5f5;
@@ -313,23 +210,23 @@ h4 small
         }
 
         .social-icon > li.facebook {
-             background-position: -58px -50px;
+            background-position: -58px -50px;
         }
 
         .social-icon > li.twitter {
-              background-position: -105px -50px;
+            background-position: -105px -50px;
         }
 
         .social-icon > li.google {
             background-position: -156px -50px;
         }
-        
+
         .social-icon > li.facebook:hover {
-             background-position: -58px -94px;
+            background-position: -58px -94px;
         }
 
         .social-icon > li.twitter:hover {
-              background-position: -105px -94px;
+            background-position: -105px -94px;
         }
 
         .social-icon > li.google:hover {
@@ -375,7 +272,7 @@ h4 small
     padding: 0 15px;
     font-family: 'league_gothic_extendedregular';
     font-size: 28px;
-    
+
 }
 
 html, body {
@@ -524,7 +421,7 @@ footer{
             z-index: 11111;
 
         }
-        
+
         h2{
             position: relative;
             z-index: 11111;
@@ -542,8 +439,8 @@ footer{
             font-size: 20px;
             font-weight: 600;
         }
-        
-        
+
+
         > ul {
             width: 100%;
             left: 10%;
@@ -551,17 +448,17 @@ footer{
             z-index: 11111;
             marigin: 0px;
             padding: 0px;
-            
+
             li {
-                 font-size: 14px;
-                 line-height: 30px;
-                 list-style-image: url('/images/check_icon.png');
-                
+                font-size: 14px;
+                line-height: 30px;
+                list-style-image: url('/images/check_icon.png');
+
                 ul {
                     position: relative;
                     margin-bottom: 20px;
                 }
-                
+
             }
         }
     }
@@ -606,7 +503,7 @@ footer{
     background: url(/images/sprite.png) no-repeat top left;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
 .jssorb21 div {
@@ -627,7 +524,7 @@ footer{
     background-position: -145px -20px;
 }
 .jssorb05 .av {
-     background-position: -145px -22px;
+    background-position: -145px -22px;
 }
 
 
@@ -650,25 +547,26 @@ footer{
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(/images/prev_arrow.png) center center no-repeat;
+    background: url(/images/sprite.png) -410px -4px no-repeat;
     overflow: hidden;
     width: 79px;
     height: 79px;
 }
 
-.jssora21r, .jssora21rdn {
-    background: url(/images/next_arrow.png) center center no-repeat;
-}
-.jssora21r,
-.jssora21l {
-    background-position: 0px -79px;
+.jssora21l, .jssora21ldn {
+       background-position: -410px -82px;
 }
 
-.jssora21rdn, 
-.jssora21ldn,
-.jssora21r:hover,
+.jssora21rdn,
+.jssora21r {
+    background-position: -320px -82px;
+}
+
 .jssora21l:hover {
-    background-position: 0px 0px;
+    background-position: -410px -3px;
+}
+.jssora21r:hover {
+    background-position: -320px -3px;
 }
 
 
@@ -689,7 +587,7 @@ footer{
     .mainContent {
         z-index: 501;
         position: relative;
-        
+
         h2 {
             color: $banner-text;
         }
@@ -718,7 +616,7 @@ footer{
     overflow: hidden;
 
     .dziubek {
-        background: url("/images/dziubek.png") no-repeat center top;
+        background: url("/images/sprite.png") -40px -21px no-repeat;
         width: 15px;
         height: 7px;
         display: block;
@@ -794,7 +692,7 @@ footer{
     background: $join-bg url(/images/join-bg.png) center 29px no-repeat;
     height: $people-image-height;
     width: $people-image-width;
-    
+
     .center {
         margin: 0 auto 40px;
         position: relative;
@@ -804,7 +702,7 @@ footer{
         .button {
             border: solid $gray-on-green 2px;
             font-size: 18px;
-
+            color: $gray-on-green;
             padding: 15px 40px;
             text-transform: uppercase;
             text-decoration: none;
@@ -823,7 +721,7 @@ footer{
         text-align: center;
         top: 207px;
 
-            p {
+        p {
             padding: 0 20px;
         }
     }
@@ -841,7 +739,7 @@ footer.container {
     color: $banner-text;
 
     .copy {
-        padding-top: 232px;
+        padding-top: 195px;
         float: left;
     }
 
@@ -863,34 +761,188 @@ footer.container {
             margin: 0px;
             padding: 0px;
             display: inline;
-            
+
             li {
                 padding: 41px 0 13px;
                 display: inline;
+                background: url(/images/sprite.png) no-repeat;
+                -webkit-transition: background-position 300ms ease-in-out;
+                -moz-transition: background-position 300ms ease-in-out;
+                -ms-transition: background-position 300ms ease-in-out;
+                -o-transition: background-position 300ms ease-in-out;
+                transition: background-position 300ms ease-in-out;
                 a {
                     color: transparent;
-                    padding: 10px;
+                    padding: 10px 5px;
                 }
             }
             .facebook {
-               background: url(/images/fb_icon_03.png) center -72px no-repeat; 
+                background-position: -162px -226px; 
                 &:hover {
-                    background-position: center 0px
+                    background-position: -162px -153px;
                 }
             }
             .twitter {
-                background: url(/images/twitter_icon_03.png) center -72px no-repeat; 
-                &:hover{
-                    background-position: center 0px
+                background-position: -234px -226px; 
+                &:hover {
+                    background-position: -234px -153px;
                 }
             }
             .google {
-                background: url(/images/g+_icon_03.png) center -72px no-repeat;
-                &:hover{
-                    background-position: center 0px
+                background-position: -87px -223px; 
+                &:hover {
+                    background-position: -87px -150px;
                 }
             }
         }
 
+    }
+}
+
+/*MEDIA QUERY*/
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+
+    .navbar-fixed-top {
+        margin: 0px;
+    }
+    .mainContent {
+        max-width: 980px;
+    }
+
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin-left: 11px;
+        }
+    }
+
+    footer.container {
+
+    aside h2 {
+        font-size: 31px !important;
+    }
+
+    .span8 {
+        min-width: 740px;
+        float: none;
+    }
+    }
+    #slider2 .data h5 {
+        font-size: 30px !important;
+    }
+
+    #slider2 .data > ul li {
+        font-size: 24px !important;
+        line-height: 41px !important;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1280px) {
+    .mainContent {
+        max-width: 1280px;
+    }
+
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin-left: 13px;
+        }
+    }
+
+    footer.container .span8 {
+        min-width: 620px;
+    }
+    #slider2 .data {
+        h5 {
+            font-size: 22px; 
+        }
+        ul li {
+            font-size: 18px;
+            line-height: 34px;
+
+        }
+    } 
+
+}
+
+
+/* Large devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+    #slider2 .data {
+        h5 {
+            font-size: 20px; 
+        }
+        ul li {
+            font-size: 14px;
+            line-height: 30px;
+
+        }
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .sidebar {
+        padding-top: 30px;
+    }
+    .mainContent {
+        max-width: 767px;
+    }
+
+    .mainContent h2 {
+        font-size: 43px !important;
+    }
+
+    .navbar-inverse .navbar-inner .social-icon {
+        display: none;
+    }
+
+    .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+        margin: 0 0 27px;
+    }
+
+    .container-fluid.team-list {
+        padding: 0px;
+
+        .people {
+            min-width: 295px;
+            margin: 13px auto 0;
+        }
+    }
+
+    footer.container {
+        margin: 20px 0 0 !important;
+        padding: 30px 10px !important;
+
+        .span8 {
+            min-width: 400px;
+            padding-left: 5px;  
+            margin-top: 100px;
+        }
+        .copy {
+            padding-top: 0px;
+        }
+        aside h2 {
+            font-size: 24px;
+        }
+
+    }
+
+    #slider2 .data h5 {
+        font-size: 30px !important;
+    }
+
+    #slider2 .data > ul li {
+        font-size: 24px;
+        line-height: 41px;
     }
 }
