@@ -5,6 +5,8 @@ tags:
     - markdown
 categories:
     - personal
+lang: EN
+image:
 
 ---
 The first commit to the Sculpin repository was made on December 20th, 2011.
